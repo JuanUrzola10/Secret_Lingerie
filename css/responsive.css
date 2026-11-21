@@ -1,0 +1,13 @@
+@media(max-width:900px){
+ .burger{display:grid}.logo{font-size:1.15rem}.tools{margin-left:auto}
+ .nav{position:fixed;top:69px;left:0;right:0;flex-direction:column;gap:0;background:var(--ivory);padding:8px 20px 20px;border-bottom:1px solid var(--rose);transform:translateY(-130%);transition:transform .3s;margin:0;z-index:-1;font-size:.85rem}
+ .nav.open{transform:none}.nav a{padding:14px 0;border-bottom:1px solid var(--rose)}
+ .hero{grid-template-columns:1fr;min-height:0;padding:28px 20px;gap:28px}.hero-img{order:-1;aspect-ratio:4/3;border-radius:120px 120px var(--r) var(--r)}
+ .cols{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:24px}
+ .modal-box{grid-template-columns:1fr;padding:18px;gap:18px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}
+ .toolbar{grid-template-columns:1fr 1fr}.toolbar #q{grid-column:1/-1}#ftoggle{display:inline-flex}.filters{display:none}.filters.open{display:grid}
+}
+@media(max-width:520px){
+ .grid{grid-template-columns:repeat(2,1fr);gap:12px}.card-actions{grid-template-columns:1fr}.cats{grid-template-columns:repeat(2,1fr);gap:12px}
+ .card-body{padding:10px 12px 12px}.card-body h3{font-size:.95rem}section.block{padding:40px 0}.head{flex-direction:column;align-items:flex-start}.m-actions .btn{flex:1 1 100%}
+}

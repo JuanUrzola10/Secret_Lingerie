@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo | SECRET LINGERIE</title><meta name="description" content="Explora el catálogo de lencería: filtra por categoría, talla, color y precio.">
+<meta property="og:title" content="Catálogo | SECRET LINGERIE"><meta property="og:description" content="Explora el catálogo de lencería: filtra por categoría, talla, color y precio."><meta property="og:type" content="website"><meta name="theme-color" content="#702D43">
+<link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/responsive.css"></head>
+<body data-page="catalogo" data-root="../">
+<main>
+<div class="wrap"><div class="page-title"><h1>Catálogo</h1></div>
+<div class="toolbar"><input id="q" type="search" placeholder="Buscar por nombre o referencia" aria-label="Buscar"><select id="sort" aria-label="Ordenar"><option value="">Ordenar por</option><option value="min">Menor precio</option><option value="max">Mayor precio</option><option value="new">Novedades</option></select><button class="btn ghost" id="ftoggle" aria-expanded="false">Filtros</button></div>
+<div class="filters" id="filters"><select id="cat" aria-label="Categoría"></select><select id="size" aria-label="Talla"></select><select id="color" aria-label="Color"></select>
+<select id="price" aria-label="Precio"><option value="">Todos los precios</option><option value="0-50000">Hasta $ 50.000</option><option value="50000-100000">$ 50.000 a $ 100.000</option><option value="100000-150000">$ 100.000 a $ 150.000</option><option value="150000-99999999">Más de $ 150.000</option></select>
+<select id="flag" aria-label="Tipo"><option value="">Todos los productos</option><option value="destacado">Destacados</option><option value="promocion">Promociones</option><option value="nuevo">Nuevos</option></select>
+<label class="check"><input type="checkbox" id="avail"> Solo disponibles</label><button class="btn ghost sm" id="clear">Limpiar filtros</button></div>
+<p id="count" aria-live="polite"></p><div class="grid" id="grid"></div>
+<div class="empty" id="empty" hidden><h3>No encontramos productos</h3><p>Prueba con otra búsqueda o limpia los filtros.</p></div>
+<div class="center"><button class="btn ghost" id="more">Ver más productos</button></div></div></main>
+<script src="../js/config.js"></script><script src="../js/products.js"></script><script src="../js/whatsapp.js"></script><script src="../js/favorites.js"></script><script src="../js/consultation-cart.js"></script><script src="../js/main.js"></script><script src="../js/catalog.js"></script></body></html>
