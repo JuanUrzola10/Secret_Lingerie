@@ -164,6 +164,17 @@ function renderModal(){
   $("#mWa").onclick=()=>WA.open(WA.product(p,M.size,M.color));
   $("#mAdd").onclick=()=>{if(!M.size||!M.color)return toast("Elige talla y color primero");Bag.add(p.id,M.size,M.color);toast("Agregado a tu lista de consultas")};
   ajustarImagenes($("#mBox"));
+  if (window.innerWidth <= 768) {
+    const thumbs = $(".thumbs", $("#mBox"));
+    if (thumbs) {
+      thumbs.style.display = "flex";
+      thumbs.style.gap = "8px";
+      thumbs.style.marginTop = "10px";
+      thumbs.style.marginBottom = "12px";
+      thumbs.style.position = "relative";
+      thumbs.style.zIndex = "2";
+    }
+  }
 }
 
 /* ---------- Inicio ---------- */
