@@ -62,7 +62,7 @@ const grid=(sel,list)=>{const e=$(sel);if(e){e.innerHTML=list.map(card).join("")
 /* ---------- Ajuste automático de proporción y encuadre ---------- */
 function ajustarImagenes(scope = document) {
   $$("img", scope).forEach((img) => {
-    if (img.closest(".drawer .row")) return;
+    if (img.closest(".drawer .row, .thumbs")) return;
 
     if (img.closest(".cat, .col, .hero, .hero-media, .banner") || img.id === "heroImg") {
       img.style.width = "100%";

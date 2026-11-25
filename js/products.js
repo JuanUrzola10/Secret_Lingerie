@@ -22,7 +22,7 @@ const D=(id,nombre,categoria,precio,anterior,o)=>{const n=String(id).padStart(3,
 
 const PRODUCTOS = [
   // Nuevos lanzamientos (n:1): 1 y 8 juntas, 9 separado
-  D(1,"Panty","panties",45000,0,{i:["assets/images/products/lenceria1.jpeg","assets/images/products/lenceria9.jpeg"],d:"Suave y cómodo.",t:["S","M"],c:[NEGRO],m:"Encaje y poliéster",f:0,n:1}),
+  D(1,"Panty","panties",45000,0,{i:["assets/images/products/lenceria1.jpeg","assets/images/products/lenceria9.jpeg"],d:"Suave y cómodo.",t:["M"],c:[NEGRO],m:"Encaje y poliéster",f:0,n:1}),
   D(2,"Panty","panties",40000,0,{i:["assets/images/products/lenceria8.jpeg"],d:"Suave y cómodo.",t:["M"],c:[NEGRO],m:"Encaje y poliéster",f:0,n:1}),
 
   // Productos destacados (f:1)
